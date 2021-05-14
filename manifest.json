@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Ctrl+W Don't Close Pinned Tabs",
+  "version": "1.0.0",
+  "description": "Ctrl+W Don't Close Pinned Tabs",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "author": "Etaoin Wu <etaoin.wu@gmail.com>",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs"],
+  "commands": {
+    "smart-ctrl-w": {
+      "suggested_key": {
+        "default": "Ctrl+W",
+        "mac": "Command+W"
+      },
+      "description": "Close This Tab (Bind to Ctrl+W)"
+    }
+  },
+  "minimum_chrome_version": "33"
+}
